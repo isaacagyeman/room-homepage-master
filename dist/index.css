@@ -1,0 +1,241 @@
+@font-face {
+    font-family: LeagueSpartan;
+    src: url('/assets/fonts/LeagueSpartan-VariableFont_wght.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'LeagueSpartan';
+    font-weight: 500;
+}
+.navbar{
+    display: flex;
+    justify-items: auto;
+    align-content: flex-start;
+    width: 55%;
+    position: absolute;
+    top: 8%;
+    padding-left: 2.5em;
+}
+#Logo{
+    width: 10%;
+}
+ul{
+    margin-left: 3.5em;
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 1em;
+}
+nav a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+.firstColumn, .secondColumn{
+    display: flex;
+    width: 100%;
+}
+.leftSide{
+    width: 55%;
+}
+.leftSide img{
+    width: 100%;
+    height: 100%;
+}
+.rightSide{
+    width: 45%;
+    background: hsl(0, 0%, 100%);
+}
+.rightContent{
+    padding: 5em;
+    margin: 0 auto;
+}
+.headingMessage p{
+    font-weight: 700;
+    font-size: 3em;
+}
+.headingMessage , .mainMessage{
+    display: none;
+}
+
+.mainMessage{
+    margin-top: 1.5em;
+    font-weight: 500;
+    color: hsl(0, 0%, 63%);
+    
+}
+
+.shopNow{
+    display: flex;
+    margin-top: 1.5em;
+}
+.shopNow svg{
+    margin-left: 1em;
+}
+.shopNow p{
+    letter-spacing: .5em;
+    font-weight: 500;
+}
+
+.navArrows{
+    display: flex;
+    position: absolute;
+    top: 60vh;
+    left: 54.3vw;
+    right: 0;
+    width: 10%;
+}
+.navArrows img{
+    padding: 1.5em 1.5em;
+    background: hsl(0, 0%, 0%);
+    transition: background .5s;
+    width: 50%;
+}
+
+
+.item1, .item3{
+    width: 35%;
+}
+.item1 img, .item3 img{
+    width: 100%;
+    height: 100%;
+}
+
+.item2{
+    width: 60%;
+    background: hsl(0, 0%, 100%);
+    padding: 2.5em;
+}
+#item2head{
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: .4em;
+}
+
+.message{
+    margin-top: .5em;
+    color: hsl(0, 0%, 63%);
+    width: 93.5%;
+}
+
+
+.slide{
+    display: none;
+}
+#menuIcon{
+    width: 8%;
+    display: none;
+}
+#btnCloseMenu{
+    width: 6%;
+}
+.mobileMenuParent{
+    display: none;
+}
+
+/**********************************
+        ACTIVE STATES
+***********************************/
+.navLink:hover{
+    cursor: pointer;
+    padding-bottom: .5em;
+    border-bottom: solid;
+    width: 10px;
+}
+.navArrows img:hover{
+    cursor: pointer;
+    background: hsl(0, 0%, 63%);
+}
+.shopNow:hover{
+    cursor: pointer;
+    color:hsl(0, 0%, 63%);
+}
+#arrowColor:hover{
+    fill: hsl(0, 0%, 63%);
+}
+
+
+/******************
+    MOBILE VIEW
+*******************/
+
+/* Meida query for menu Icon */
+
+@media only screen and (max-width:800px){
+    nav{
+        display: none;
+    }
+    .navbar{
+        width: 100%;
+        padding-left: .5em;
+
+    }
+    #menuIcon{
+        display: block;
+    }
+
+    .mobileMenuParent{
+
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(0%,0%,0%,0.3);
+        position: fixed;
+    }
+    .mobileMenuContent{
+        background-color: hsl(0, 0%, 100%);
+        padding: 2.5em 0em 2.5em 2.5em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobileMenuContent a{
+        text-decoration: none;
+        color: hsl(0, 0%, 0%);
+    }
+    
+    
+}
+
+@media only screen  and (max-width:600px) {
+    .firstColumn, .secondColumn{
+        flex-direction: column;
+    }
+    .leftSide, .rightSide, .item1, .item2, .item3{
+        width: 100%;
+    }
+    #slide-1{
+        content: url('/assets/images/mobile-image-hero-1.jpg');
+    }
+    #slide-2{
+        content: url('/assets/images/mobile-image-hero-2.jpg');
+    }
+    #slide-3{
+        content: url('/assets/images/mobile-image-hero-3.jpg');
+    }
+    .navArrows{
+        top: 36.57vh;
+        left: 70vw;
+        width: 30vw;
+
+    }
+    .rightContent{
+        padding: 2em;
+    }
+    .item2{
+        padding: 2em;
+    }
+    #Logo{
+        width: 20%;
+        margin-top: .15em;
+        margin-left: 30%;
+    }
+    .headingMessage p{
+        font-size: 2em;
+    }
+}
