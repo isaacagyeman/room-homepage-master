@@ -218,24 +218,5 @@ nav a{
     #slide-3{
         content: url('/assets/images/mobile-image-hero-3.jpg');
     }
-    .navArrows{
-        top: 36.57vh;
-        left: 70vw;
-        width: 30vw;
-
-    }
-    .rightContent{
-        padding: 2em;
-    }
-    .item2{
-        padding: 2em;
-    }
-    #Logo{
-        width: 20%;
-        margin-top: .15em;
-        margin-left: 30%;
-    }
-    .headingMessage p{
-        font-size: 2em;
-    }
+ 
 }
