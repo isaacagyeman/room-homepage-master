@@ -165,7 +165,7 @@ nav a{
 
 /* Meida query for menu Icon */
 
-@media only screen and (max-width:800px){
+/* @media only screen and (max-width:800px){
     nav{
         display: none;
     }
@@ -200,7 +200,7 @@ nav a{
     }
     
     
-}
+} */
 
 @media only screen  and (max-width:600px) {
     .firstColumn, .secondColumn{
