@@ -132,6 +132,7 @@ nav a{
 }
 #btnCloseMenu{
     width: 6%;
+    display: none;
 }
 .mobileMenuParent{
     display: none;
