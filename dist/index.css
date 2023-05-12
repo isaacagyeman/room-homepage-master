@@ -7,9 +7,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+body{
     font-family: 'LeagueSpartan';
     font-weight: 500;
+    font-size: .975rem;
+    /* overflow: hidden; */
 }
 .navbar{
     display: flex;
@@ -19,11 +21,12 @@ html{
     position: absolute;
     top: 8%;
     padding-left: 2.5em;
+    /* border: solid magenta; */
 }
 #Logo{
     width: 10%;
 }
-ul{
+nav{
     margin-left: 3.5em;
 }
 ul li{
@@ -45,21 +48,19 @@ nav a{
 .leftSide img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .rightSide{
     width: 45%;
     background: hsl(0, 0%, 100%);
 }
 .rightContent{
-    padding: 5em;
+    padding: 3.5em;
     margin: 0 auto;
 }
 .headingMessage p{
     font-weight: 700;
-    font-size: 3em;
-}
-.headingMessage , .mainMessage{
-    display: none;
+    font-size: 2.875rem;
 }
 
 .mainMessage{
@@ -82,20 +83,16 @@ nav a{
 }
 
 .navArrows{
-    display: flex;
-    position: absolute;
-    top: 60vh;
-    left: 54.3vw;
-    right: 0;
-    width: 10%;
+display: flex;
+height: fit-content;
+top: 23rem;
+position: relative;
 }
-.navArrows img{
-    padding: 1.5em 1.5em;
-    background: hsl(0, 0%, 0%);
-    transition: background .5s;
-    width: 50%;
+button{
+border: none;
+padding: 1.5em;
+background: hsl(0, 0%, 0%);
 }
-
 
 .item1, .item3{
     width: 35%;
@@ -147,7 +144,7 @@ nav a{
     border-bottom: solid;
     width: 10px;
 }
-.navArrows img:hover{
+.navArrows button:hover{
     cursor: pointer;
     background: hsl(0, 0%, 63%);
 }
@@ -167,6 +164,25 @@ nav a{
 /* Meida query for menu Icon */
 
 /*  */
+@media only screen and (max-width: 600px){
+.navbar nav{
+display: none;    
+}
+.navbar{
+width: 100%;
+}
+#menuIcon{
+    display: block;
+}
+#Logo{
+    margin: 0 auto;
+    width: 25%;
+}
+.navArrows{
+top: 0rem;
+}
+
+}
 
 @media only screen  and (max-width:600px) {
     .firstColumn, .secondColumn{

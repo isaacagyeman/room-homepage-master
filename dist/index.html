@@ -22,7 +22,7 @@
         <div class="navbar">
           <img src="/assets/images/icon-hamburger.svg" id="menuIcon"/>
           <img src="/assets/images/logo.svg" id="Logo"/>
-          <nav>
+          <nav class="navBar">
             <img src="/assets/images/icon-close.svg" id="btnCloseMenu"/>
             <ul>
               <li><a href="#" class="navLink">home</a></li>
@@ -33,13 +33,17 @@
           </nav>
         </div>
         <img src="/assets/images/desktop-image-hero-1.jpg" class="slide" id="slide-1"/>
-        <div class="navArrows">
-          <img src="/assets/images/icon-angle-left.svg" id="prevSlide" onclick="nextSlide(-1)"/>
-          <img src="/assets/images/icon-angle-right.svg" id="nexSlide" onclick="nextSlide(1)"/>
-        </div>
         <img src ="/assets/images/desktop-image-hero-2.jpg" class="slide" id="slide-2"/>
         <img src="/assets/images/desktop-image-hero-3.jpg" class="slide" id="slide-3"/>
       </section>
+      <div class="navArrows">
+        <button onclick="nextSlide(-1)">
+          <img src="/assets/images/icon-angle-left.svg" id="prevSlide"/>
+        </button>
+        <button onclick="nextSlide(1)">
+          <img src="/assets/images/icon-angle-right.svg" id="nexSlide"/>
+        </button>
+      </div>
       <section class="rightSide">
         <div class="rightContent">
           <div class="headingMessage" id="headingMessage1">
@@ -103,12 +107,12 @@
       </div>
     </section>
   </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">AGYEMAN ISAAC</a>.
+  </div> -->
   <script src="/dist/index.js"></script>
 </body>
 </html>
 
-<div class="attribution">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-  Coded by <a href="#">AGYEMAN ISAAC</a>.
-</div>
 
