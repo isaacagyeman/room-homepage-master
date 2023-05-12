@@ -48,14 +48,13 @@ nav a{
 .leftSide img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 .rightSide{
     width: 45%;
     background: hsl(0, 0%, 100%);
 }
 .rightContent{
-    padding: 3.5em;
+    padding: 5em;
     margin: 0 auto;
 }
 .headingMessage p{
@@ -131,9 +130,6 @@ background: hsl(0, 0%, 0%);
     width: 6%;
     display: none;
 }
-.mobileMenuParent{
-    display: none;
-}
 
 /**********************************
         ACTIVE STATES
@@ -179,8 +175,20 @@ width: 100%;
     width: 25%;
 }
 .navArrows{
-top: 0rem;
+top: -4.2rem;
+/* left: 15rem; */
 }
+
+.rootParentMenu{
+width: 100%;
+height: 100vh;
+background: black;
+opacity: 0.75;
+position: fixed;
+display: none;
+}
+
+
 
 }
 
@@ -199,6 +207,14 @@ top: 0rem;
     }
     #slide-3{
         content: url('/assets/images/mobile-image-hero-3.jpg');
+    }
+    .rightContent{
+        padding: 0em;
+    }
+
+    .headingMessage p{
+        /* font-weight: 500; */
+        font-size: 2.7rem;
     }
  
 }
