@@ -1,6 +1,6 @@
-const navBar = document.querySelector('.navBar')
+const navBar = document.querySelector('.navbar')
 const hamburgerMenu = document.querySelector('#menuIcon')
-const logo = document.querySelector('#Logo')
+const mobileNav = document.querySelector('.rootParentMenu');
 const btnMenuClose = document.querySelector('#btnCloseMenu')
 const imgSlides = document.getElementsByClassName('slide')
 const headmessageslides = document.getElementsByClassName('headingMessage')
@@ -36,9 +36,11 @@ function showSlides(n){
 }
 
     hamburgerMenu.addEventListener('click', ()=>{
- 
+        navBar.style.display = 'none';
+        mobileNav.style.display = 'block';
     })
     
     btnMenuClose.addEventListener('click', ()=>{
-  
+        mobileNav.style.display = 'none';
+        navBar.style.display = 'flex';
     })

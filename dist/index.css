@@ -161,7 +161,6 @@ display: none;
 
 /* Meida query for menu Icon */
 
-/*  */
 @media only screen and (max-width: 600px){
 .navBar{
 display: none;
@@ -172,7 +171,6 @@ padding-left: 0;
 .navbar{
 width: 100%;
 padding-left: 1em;
-display: none; /*This is the hamburger and logo part of the mobile nav*/
 }
 
 #menuIcon{
@@ -194,12 +192,12 @@ background: black;
 opacity: 0.75;
 position: fixed;
 z-index: 1;
+display: none;
 }
 .mobileNav{
 background: hsl(0, 0%, 100%);
 display: flex;
 padding: 3em  0em;
-
 }
 .mobileNav a{
 color: hsl(0, 0%, 0%);
