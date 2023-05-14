@@ -21,7 +21,6 @@ body{
     position: absolute;
     top: 8%;
     padding-left: 2.5em;
-    /* border: solid magenta; */
 }
 #Logo{
     width: 10%;
@@ -127,8 +126,11 @@ background: hsl(0, 0%, 0%);
     display: none;
 }
 #btnCloseMenu{
-    width: 6%;
+    width: 6.5%;
     display: none;
+}
+.mobileNav{
+display: none;
 }
 
 /**********************************
@@ -161,22 +163,28 @@ background: hsl(0, 0%, 0%);
 
 /*  */
 @media only screen and (max-width: 600px){
-.navbar nav{
-display: none;    
+.navBar{
+display: none;
+margin-left: auto;
+padding-left: 0;
 }
+
 .navbar{
 width: 100%;
+padding-left: 1em;
+display: none; /*This is the hamburger and logo part of the mobile nav*/
 }
+
 #menuIcon{
-    display: block;
+display: block;
 }
+
 #Logo{
-    margin: 0 auto;
-    width: 25%;
+margin: 0 auto;
+width: 25%;
 }
 .navArrows{
 top: -4.2rem;
-/* left: 15rem; */
 }
 
 .rootParentMenu{
@@ -185,10 +193,25 @@ height: 100vh;
 background: black;
 opacity: 0.75;
 position: fixed;
-display: none;
+z-index: 1;
 }
+.mobileNav{
+background: hsl(0, 0%, 100%);
+display: flex;
+padding: 3em  0em;
 
-
+}
+.mobileNav a{
+color: hsl(0, 0%, 0%);
+text-decoration: none;
+}
+.mobileNav ul{
+margin-left: auto;
+}
+#btnCloseMenu{
+display: block;
+margin-left: 1.5em;
+}
 
 }
 
@@ -213,7 +236,6 @@ display: none;
     }
 
     .headingMessage p{
-        /* font-weight: 500; */
         font-size: 2.7rem;
     }
  
